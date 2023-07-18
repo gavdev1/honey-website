@@ -1,0 +1,7 @@
+@use "../custom" as *;
+
+.about {
+	&-img{
+		width: 100px;
+	}
+}

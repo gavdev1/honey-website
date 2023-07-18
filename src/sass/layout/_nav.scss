@@ -1,0 +1,28 @@
+@use "../custom" as *;
+
+.nav-menu{
+	position: absolute;
+	@include media-breakpoint-up(md){
+		background-color: transparent !important;
+		position: static;
+	}
+	
+}
+
+.nav-item{
+	position: relative;
+}
+
+.nav-link::before{
+	content: "";
+	display: block;
+	width: 3px;
+	height: 55%;
+	position: absolute;
+	left: -0.5em;
+	background-color: $primary;
+	@include media-breakpoint-up(md){
+		display: none;
+	}
+	
+}
